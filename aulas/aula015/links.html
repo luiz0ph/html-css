@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a::after {
+            content: ' [Link]';
+            color: lightgray;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="youtube.com" target="_blank">youtube</a></li>
+        <li><a href="google.com" target="_blank">google</a></li>
+        <li><a href="nigga.com" target="_blank">nigga</a></li>
+    </ul>
+</body>
+</html>

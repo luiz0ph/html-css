@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Medidas absolutas:
+    cm, mm, in, px, pt, pc
+    
+    Medidas Relativas:
+    em, ex, rem, vw, vh, % */
+
+    /* em é relativo ao tamanho padrão da fonte ou seja: 
+    16 geralmente = 1em */
+    font-size: 1.2em;
+}
+
+h1, h2 {
+    font: italic bolder 3em 'work sans', sans-serif;
+}
