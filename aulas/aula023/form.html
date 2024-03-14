@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label {
+            display: block;
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prova</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="inome">Nome: 
+            <input 
+            type="text"
+            required
+            placeholder="Seu nome"
+            id="inome"
+            name="nome"
+            autocomplete="name">
+        </label>
+
+        <label for="imedia">Média: 
+            <input 
+            type="number"
+            placeholder="0 a 10"
+            min="0"
+            max="10"
+            id="imedia"
+            name="media"
+            required
+            step="0.1"
+            value="5">
+        </label>
+
+        <label for="imes">Mês da prova: 
+            <input 
+            type="month"
+            required
+            id="imes"
+            name="mes"
+            value="2024-03">
+        </label>
+
+        <label for="ihora">Horário da prova: 
+            <input 
+            type="time"
+            id="ihora"
+            name="hora">
+        </label>
+
+        <label for="idata">Data da prova:
+            <input 
+            type="date"
+            id="idata"
+            name="data"
+            value="2024-03-13">
+        </label>
+
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
