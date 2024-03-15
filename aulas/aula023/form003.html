@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>
+                Cadastro
+            </legend>
+
+            <div>
+                <label for="iemail">Email:
+                    <input
+                    type="email"
+                    id="iemail"
+                    name="email"
+                    placeholder="exemplo@gmail.com"
+                    autocomplete="email" 
+                    required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="itel">Telefone:
+                    <input 
+                    type="tel"
+                    id="itel"
+                    name="telefone"
+                    autocomplete="tel"
+                    placeholder="(xx)xxxxx-xxxx"
+                    pattern="^\(\d{2}\)\d{4, 5}-\d{4}$"
+                    required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <button type="submit">
+                    Enviar
+                </button>
+
+                <button type="reset">
+                    Limpar
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
