@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Range
+    </h1>
+
+    <form action="cadastro.php" method="get">
+        <label for="inum">Numero: 
+            <input 
+            type="range"
+            name="num"
+            id="inum"
+            min="0"
+            max="10"
+            value="5"
+            oninput="iinum.innerHTML = Number(inum.value)">
+
+            <output name="iinum" id="iinum">
+                0
+            </output>
+        </label>
+    </form>
+</body>
+</html>
