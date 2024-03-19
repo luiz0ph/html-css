@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de formulario
+    </h1>
+
+    <form action="cadastro.php" method="post">
+        <label for="iestado">Estado:
+            <select name="estado" id="iestado">
+                <option value="" selected>
+                    <strong>Seu Estado:</strong> 
+                </option>
+                <optgroup label="sudeste">
+                    <option value="sp">São paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="es">Espirito Santo</option>
+                    <option value="mg">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="sul">
+                    <option value="rs">Rio Grande do sul</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="pr">Paraná</option>
+                </optgroup>
+            </select>
+        </label> <br>
+        <br>
+
+        <label for="iprof">Profissão:
+            <input 
+            type="text"
+            id="iprof"
+            name="prof"
+            list="lsprof">
+
+            <datalist id="lsprof">
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Arquiteto</option>
+            </datalist>
+        </label> <br>
+        <br>
+
+        <label for="imsg">Mensagem: 
+            <br>
+            <textarea 
+            name="msg" 
+            id="imsg" 
+            cols="30" 
+            rows="10"></textarea>
+        </label> <br>
+        <br>
+        
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+</body>
+</html>
