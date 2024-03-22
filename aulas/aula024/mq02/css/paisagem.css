@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Deitado (Paisagem/landscape) */
+
+body {
+    background: black url(../../img/cev-landscape.jpg) left bottom;
+}
