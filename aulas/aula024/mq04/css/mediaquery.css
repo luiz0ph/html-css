@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device BreakPoints
+------------------------------
+
+Pequenas telas: 600px
+Smartphones: 768px
+tablets: 992px
+Desktop: 1200px
+Grandes telas: 1400px 
+
+*/
+
+/* Impressora */
+@media print {
+    body {
+        background: black url(../../img/back-print.jpg); /* Desnecessario pois impressora não imprime background */
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after {
+        font-size: 18px;
+        content: 'Essa impressão foi feita por github.com/luiz0ph';
+        text-decoration: overline;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background: black url(../../img/back-tablet.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+
+    body {
+        background: black url(../../img/back-pc.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+/* Grandes telas */
+@media screen and (min-width: 1400px) {
+    body {
+        background: black url(../../img/back-tv.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
