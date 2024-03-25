@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Outras Medias queries */
+
+@media screen and (min-width: 750px) {
+
+    /* Fazer o menu burguer sumir */
+    #burguer {
+        display: none;
+    }
+
+    /* Fazer o menu aparecer */
+    menu {
+        display: block;
+    }
+
+    menu > ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        width: 130px;
+        padding: 10px;
+    }
+
+    main {
+        width: 740px;
+    }
+}
