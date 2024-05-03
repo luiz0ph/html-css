@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Tablet */
+@media screen and (min-width: 710px) and (max-width: 1000px) {
+    .container {
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+    nav > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 60%;
+    }
+
+    ul > li {
+        flex: 0 0 90px;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100vw;
+    }
+
+    ul > li {
+        flex: 0 1 90px;
+    }
+}
