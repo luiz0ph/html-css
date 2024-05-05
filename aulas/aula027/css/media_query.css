@@ -3,37 +3,38 @@
 /* Tablet */
 @media screen and (min-width: 710px) and (max-width: 1000px) {
     .container {
+        display: flex;
         flex-flow: column nowrap;
         justify-content: start;
         align-items: start;
-
     }
 
-    nav > ul {
+    ul {
         display: flex;
         flex-flow: row nowrap;
-        width: 60%;
     }
 
-    ul > li {
-        flex: 0 0 90px;
-    } 
+    li {
+        width: 11vw;
+        flex: 1 1 150px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     .container {
+        display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
     }
 
-    nav > ul {
+    ul {
         display: flex;
         flex-flow: row nowrap;
-        width: 100vw;
     }
 
-    ul > li {
-        flex: 0 1 90px;
+    li {
+        width: 10vw;
+        flex: 1 1 140px;
     }
 }
